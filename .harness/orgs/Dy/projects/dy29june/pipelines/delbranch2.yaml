@@ -1,0 +1,30 @@
+pipeline:
+  name: del-branch-2
+  identifier: delbranch2
+  projectIdentifier: dy29june
+  orgIdentifier: Dy
+  tags: {}
+  stages:
+    - stage:
+        name: hi
+        identifier: hi
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo hi
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
